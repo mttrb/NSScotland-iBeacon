@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9C5A11D17E4A96B00928B26 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C5A11C17E4A96B00928B26 /* Cocoa.framework */; };
+		C9C5A12717E4A96B00928B26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9C5A12517E4A96B00928B26 /* InfoPlist.strings */; };
+		C9C5A12917E4A96B00928B26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5A12817E4A96B00928B26 /* main.m */; };
+		C9C5A12D17E4A96B00928B26 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C9C5A12B17E4A96B00928B26 /* Credits.rtf */; };
+		C9C5A13017E4A96B00928B26 /* BLCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5A12F17E4A96B00928B26 /* BLCAppDelegate.m */; };
+		C9C5A13317E4A96B00928B26 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9C5A13117E4A96B00928B26 /* MainMenu.xib */; };
+		C9C5A13517E4A96B00928B26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C5A13417E4A96B00928B26 /* Images.xcassets */; };
+		C9C5A13C17E4A96B00928B26 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C5A13B17E4A96B00928B26 /* XCTest.framework */; };
+		C9C5A13D17E4A96B00928B26 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C5A11C17E4A96B00928B26 /* Cocoa.framework */; };
+		C9C5A14517E4A96B00928B26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9C5A14317E4A96B00928B26 /* InfoPlist.strings */; };
+		C9C5A14717E4A96B00928B26 /* PyroBLETests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5A14617E4A96B00928B26 /* PyroBLETests.m */; };
+		C9C5A15217E4A99500928B26 /* PyroManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C5A15117E4A99500928B26 /* PyroManager.m */; };
+		C9C5A15417E4A9BD00928B26 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C5A15317E4A9BD00928B26 /* IOBluetooth.framework */; };
+		C9C5A15617E4A9D800928B26 /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C5A15517E4A9D800928B26 /* IOBluetoothUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9C5A13E17E4A96B00928B26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C5A11117E4A96B00928B26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C5A11817E4A96B00928B26;
+			remoteInfo = PyroBLE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9C5A11917E4A96B00928B26 /* PyroBLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PyroBLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C5A11C17E4A96B00928B26 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C9C5A11F17E4A96B00928B26 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C9C5A12017E4A96B00928B26 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C9C5A12117E4A96B00928B26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9C5A12417E4A96B00928B26 /* PyroBLE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PyroBLE-Info.plist"; sourceTree = "<group>"; };
+		C9C5A12617E4A96B00928B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9C5A12817E4A96B00928B26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9C5A12A17E4A96B00928B26 /* PyroBLE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PyroBLE-Prefix.pch"; sourceTree = "<group>"; };
+		C9C5A12C17E4A96B00928B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C9C5A12E17E4A96B00928B26 /* BLCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLCAppDelegate.h; sourceTree = "<group>"; };
+		C9C5A12F17E4A96B00928B26 /* BLCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLCAppDelegate.m; sourceTree = "<group>"; };
+		C9C5A13217E4A96B00928B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C9C5A13417E4A96B00928B26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C9C5A13A17E4A96B00928B26 /* PyroBLETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PyroBLETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9C5A13B17E4A96B00928B26 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C9C5A14217E4A96B00928B26 /* PyroBLETests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PyroBLETests-Info.plist"; sourceTree = "<group>"; };
+		C9C5A14417E4A96B00928B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9C5A14617E4A96B00928B26 /* PyroBLETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyroBLETests.m; sourceTree = "<group>"; };
+		C9C5A15017E4A99500928B26 /* PyroManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyroManager.h; sourceTree = "<group>"; };
+		C9C5A15117E4A99500928B26 /* PyroManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyroManager.m; sourceTree = "<group>"; };
+		C9C5A15317E4A9BD00928B26 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		C9C5A15517E4A9D800928B26 /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9C5A11617E4A96B00928B26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C5A15617E4A9D800928B26 /* IOBluetoothUI.framework in Frameworks */,
+				C9C5A15417E4A9BD00928B26 /* IOBluetooth.framework in Frameworks */,
+				C9C5A11D17E4A96B00928B26 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C5A13717E4A96B00928B26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C5A13D17E4A96B00928B26 /* Cocoa.framework in Frameworks */,
+				C9C5A13C17E4A96B00928B26 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9C5A11017E4A96B00928B26 = {
+			isa = PBXGroup;
+			children = (
+				C9C5A12217E4A96B00928B26 /* PyroBLE */,
+				C9C5A14017E4A96B00928B26 /* PyroBLETests */,
+				C9C5A11B17E4A96B00928B26 /* Frameworks */,
+				C9C5A11A17E4A96B00928B26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9C5A11A17E4A96B00928B26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9C5A11917E4A96B00928B26 /* PyroBLE.app */,
+				C9C5A13A17E4A96B00928B26 /* PyroBLETests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9C5A11B17E4A96B00928B26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9C5A15517E4A9D800928B26 /* IOBluetoothUI.framework */,
+				C9C5A15317E4A9BD00928B26 /* IOBluetooth.framework */,
+				C9C5A11C17E4A96B00928B26 /* Cocoa.framework */,
+				C9C5A13B17E4A96B00928B26 /* XCTest.framework */,
+				C9C5A11E17E4A96B00928B26 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9C5A11E17E4A96B00928B26 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9C5A11F17E4A96B00928B26 /* AppKit.framework */,
+				C9C5A12017E4A96B00928B26 /* CoreData.framework */,
+				C9C5A12117E4A96B00928B26 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C9C5A12217E4A96B00928B26 /* PyroBLE */ = {
+			isa = PBXGroup;
+			children = (
+				C9C5A12E17E4A96B00928B26 /* BLCAppDelegate.h */,
+				C9C5A12F17E4A96B00928B26 /* BLCAppDelegate.m */,
+				C9C5A15017E4A99500928B26 /* PyroManager.h */,
+				C9C5A15117E4A99500928B26 /* PyroManager.m */,
+				C9C5A13117E4A96B00928B26 /* MainMenu.xib */,
+				C9C5A13417E4A96B00928B26 /* Images.xcassets */,
+				C9C5A12317E4A96B00928B26 /* Supporting Files */,
+			);
+			path = PyroBLE;
+			sourceTree = "<group>";
+		};
+		C9C5A12317E4A96B00928B26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9C5A12417E4A96B00928B26 /* PyroBLE-Info.plist */,
+				C9C5A12517E4A96B00928B26 /* InfoPlist.strings */,
+				C9C5A12817E4A96B00928B26 /* main.m */,
+				C9C5A12A17E4A96B00928B26 /* PyroBLE-Prefix.pch */,
+				C9C5A12B17E4A96B00928B26 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9C5A14017E4A96B00928B26 /* PyroBLETests */ = {
+			isa = PBXGroup;
+			children = (
+				C9C5A14617E4A96B00928B26 /* PyroBLETests.m */,
+				C9C5A14117E4A96B00928B26 /* Supporting Files */,
+			);
+			path = PyroBLETests;
+			sourceTree = "<group>";
+		};
+		C9C5A14117E4A96B00928B26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9C5A14217E4A96B00928B26 /* PyroBLETests-Info.plist */,
+				C9C5A14317E4A96B00928B26 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9C5A11817E4A96B00928B26 /* PyroBLE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C5A14A17E4A96C00928B26 /* Build configuration list for PBXNativeTarget "PyroBLE" */;
+			buildPhases = (
+				C9C5A11517E4A96B00928B26 /* Sources */,
+				C9C5A11617E4A96B00928B26 /* Frameworks */,
+				C9C5A11717E4A96B00928B26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PyroBLE;
+			productName = PyroBLE;
+			productReference = C9C5A11917E4A96B00928B26 /* PyroBLE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9C5A13917E4A96B00928B26 /* PyroBLETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C5A14D17E4A96C00928B26 /* Build configuration list for PBXNativeTarget "PyroBLETests" */;
+			buildPhases = (
+				C9C5A13617E4A96B00928B26 /* Sources */,
+				C9C5A13717E4A96B00928B26 /* Frameworks */,
+				C9C5A13817E4A96B00928B26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9C5A13F17E4A96B00928B26 /* PBXTargetDependency */,
+			);
+			name = PyroBLETests;
+			productName = PyroBLETests;
+			productReference = C9C5A13A17E4A96B00928B26 /* PyroBLETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9C5A11117E4A96B00928B26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BLC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Blended Cocoa";
+				TargetAttributes = {
+					C9C5A13917E4A96B00928B26 = {
+						TestTargetID = C9C5A11817E4A96B00928B26;
+					};
+				};
+			};
+			buildConfigurationList = C9C5A11417E4A96B00928B26 /* Build configuration list for PBXProject "PyroBLE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9C5A11017E4A96B00928B26;
+			productRefGroup = C9C5A11A17E4A96B00928B26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9C5A11817E4A96B00928B26 /* PyroBLE */,
+				C9C5A13917E4A96B00928B26 /* PyroBLETests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9C5A11717E4A96B00928B26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C5A12717E4A96B00928B26 /* InfoPlist.strings in Resources */,
+				C9C5A13517E4A96B00928B26 /* Images.xcassets in Resources */,
+				C9C5A12D17E4A96B00928B26 /* Credits.rtf in Resources */,
+				C9C5A13317E4A96B00928B26 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C5A13817E4A96B00928B26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C5A14517E4A96B00928B26 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9C5A11517E4A96B00928B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C5A15217E4A99500928B26 /* PyroManager.m in Sources */,
+				C9C5A13017E4A96B00928B26 /* BLCAppDelegate.m in Sources */,
+				C9C5A12917E4A96B00928B26 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C5A13617E4A96B00928B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9C5A14717E4A96B00928B26 /* PyroBLETests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9C5A13F17E4A96B00928B26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C5A11817E4A96B00928B26 /* PyroBLE */;
+			targetProxy = C9C5A13E17E4A96B00928B26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9C5A12517E4A96B00928B26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C5A12617E4A96B00928B26 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9C5A12B17E4A96B00928B26 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C5A12C17E4A96B00928B26 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C9C5A13117E4A96B00928B26 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C5A13217E4A96B00928B26 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C9C5A14317E4A96B00928B26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9C5A14417E4A96B00928B26 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9C5A14817E4A96C00928B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9C5A14917E4A96C00928B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C9C5A14B17E4A96C00928B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/IOBluetooth.framework/Versions/A/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PyroBLE/PyroBLE-Prefix.pch";
+				INFOPLIST_FILE = "PyroBLE/PyroBLE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9C5A14C17E4A96C00928B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/IOBluetooth.framework/Versions/A/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PyroBLE/PyroBLE-Prefix.pch";
+				INFOPLIST_FILE = "PyroBLE/PyroBLE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C9C5A14E17E4A96C00928B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PyroBLE.app/Contents/MacOS/PyroBLE";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PyroBLE/PyroBLE-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PyroBLETests/PyroBLETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C9C5A14F17E4A96C00928B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PyroBLE.app/Contents/MacOS/PyroBLE";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PyroBLE/PyroBLE-Prefix.pch";
+				INFOPLIST_FILE = "PyroBLETests/PyroBLETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9C5A11417E4A96B00928B26 /* Build configuration list for PBXProject "PyroBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C5A14817E4A96C00928B26 /* Debug */,
+				C9C5A14917E4A96C00928B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C5A14A17E4A96C00928B26 /* Build configuration list for PBXNativeTarget "PyroBLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C5A14B17E4A96C00928B26 /* Debug */,
+				C9C5A14C17E4A96C00928B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9C5A14D17E4A96C00928B26 /* Build configuration list for PBXNativeTarget "PyroBLETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9C5A14E17E4A96C00928B26 /* Debug */,
+				C9C5A14F17E4A96C00928B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9C5A11117E4A96B00928B26 /* Project object */;
+}
