@@ -40,8 +40,10 @@ NSString *TemperatureKey = @"TemperatureKey";
         _centralManager = [[CBCentralManager alloc] initWithDelegate:self
                                                                queue:nil];
         
+        CBUUID *bleShieldServiceUUID = [CBUUID UUIDWithString:kBLEShieldServiceUUIDString];
+                
         NSLog(@"Starting Scan");
-        [_centralManager scanForPeripheralsWithServices:nil
+        [_centralManager scanForPeripheralsWithServices:@[ bleShieldServiceUUID ]
                                                 options:@{
                                                           CBCentralManagerScanOptionAllowDuplicatesKey: @NO
                                                           }];
