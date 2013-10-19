@@ -32,10 +32,7 @@
             
             NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:proxUUIDString];
             
-            CLBeaconRegion *beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:proximityUUID
-                                                                                   major:1
-                                                                                   minor:1000
-                                                                              identifier:@"com.blendedcocoa.RBLBeacons"];
+            CLBeaconRegion *beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:proximityUUID                                                                                      identifier:@"com.blendedcocoa.RBLBeacons" ];
             
             beaconRegion.notifyEntryStateOnDisplay = YES;
             beaconRegion.notifyOnEntry = NO;
@@ -71,7 +68,7 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
-
+    
     NSLog(@"%@", beacons);
 }
 

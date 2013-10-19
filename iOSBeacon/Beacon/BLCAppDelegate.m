@@ -26,7 +26,7 @@
     CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:proximityUUID
                                                                      major:4
                                                                      minor:4000
-                                                                identifier:@"com.blendedcocoa.beacon"];
+                                                                identifier:@"com.blendedcocoa.RBLBeacons"];
     
     NSDictionary *proximityData = [region peripheralDataWithMeasuredPower:nil];
     
