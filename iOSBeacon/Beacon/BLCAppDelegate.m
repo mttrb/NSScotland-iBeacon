@@ -19,33 +19,34 @@
 
 @implementation BLCAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:@"A6C4C5FA-A8DD-4BA1-B9A8-A240584F02D3"];
-    
-    CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:proximityUUID
-                                                                     major:4
-                                                                     minor:4000
-                                                                identifier:@"com.blendedcocoa.RBLBeacons"];
-    
-    NSDictionary *proximityData = [region peripheralDataWithMeasuredPower:nil];
-    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
     _peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self
                                                                  queue:nil];
-    
-    [_peripheralManager startAdvertising:proximityData];
-    
-    // Override point for customization after application launch.
     return YES;
 }
 
 - (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral {
-    NSLog(@"State: %d", peripheral.state);
+    if (peripheral.state == CBPeripheralManagerStatePoweredOn) {
+        
+        NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:@"A7C4C5FA-A8DD-4BA1-B9A8-A240584F02D3"];
+        
+        CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:proximityUUID
+                                                                         major:4
+                                                                         minor:4000
+                                                                    identifier:@"com.blendedcocoa.RBLBeacons"];
+        
+        NSDictionary *proximityData = [region peripheralDataWithMeasuredPower:nil];
+        
+        NSLog(@"%@", proximityData);
+        
+
+        [_peripheralManager startAdvertising:proximityData];
+    }
 }
 
 - (void)peripheralManagerDidStartAdvertising:(CBPeripheralManager *)peripheral error:(NSError *)error {
     NSLog(@"Started advertising");
-    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
